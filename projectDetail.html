@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Details</title>
+  <link rel="stylesheet" href="css/projectdetail.css" />
+  <!-- Include Chart.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <h1 id="project-title">Loading Project...</h1>
+    <span id="project-status" class="status-badge">Status</span>
+  </header>
+
+  <main class="main-content">
+    <section class="project-info">
+      <div class="info-grid">
+        <div><strong>County:</strong> <span id="project-county"></span></div>
+        <div><strong>Sector:</strong> <span id="project-sector"></span></div>
+        <div><strong>Type:</strong> <span id="project-type"></span></div>
+        <div><strong>Start Date:</strong> <span id="project-start"></span></div>
+        <div><strong>Expected Completion:</strong> <span id="project-expected-end"></span></div>
+        <div><strong>Actual Completion:</strong> <span id="project-actual-end"></span></div>
+        <div><strong>Budgeted Amount:</strong> KES <span id="project-budgeted"></span></div>
+        <div><strong>Actual Expenditure:</strong> KES <span id="project-actual"></span></div>
+        <div><strong>Contract Value:</strong> KES <span id="project-contract"></span></div>
+        <div><strong>Funding Source:</strong> <span id="project-funding"></span></div>
+        <div><strong>Contractor:</strong> <span id="project-contractor"></span></div>
+        <div><strong>Procurement Method:</strong> <span id="project-procurement"></span></div>
+        <div><strong>Supervising Authority:</strong> <span id="project-supervising"></span></div>
+        <div><strong>Compliance Status:</strong> <span id="project-compliance"></span></div>
+        <div><strong>Site Visits:</strong> <span id="project-visits"></span></div>
+        <div><strong>Public Participation:</strong> <span id="project-participation"></span></div>
+        <div><strong>Community Rating:</strong> <span id="project-rating"></span></div>
+        <div><strong>Complaints Logged:</strong> <span id="project-complaints"></span></div>
+        <div><strong>Feedback Channel:</strong> <span id="project-feedback-channel"></span></div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <h2>Project Timeline</h2>
+      <div id="timeline-container" class="timeline-container"></div>
+    </section>
+
+    <section class="budget-section">
+      <h2>Budget Overview</h2>
+      <canvas id="budget-chart"></canvas>
+    </section>
+
+    <section class="issues-section">
+      <h2>Issues Identified</h2>
+      <ul id="issues-list"></ul>
+    </section>
+
+    <section class="resolutions-section">
+      <h2>Resolution Actions</h2>
+      <ul id="resolutions-list"></ul>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Submit Feedback</h2>
+      <label for="rating">Rating (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" />
+      <label for="comment">Comment:</label>
+      <textarea id="comment"></textarea>
+      <button id="submit-feedback">Submit</button>
+      <p id="feedback-message"></p>
+    </section>
+
+    <section class="related-projects-section">
+      <h2>Related Projects</h2>
+      <div id="related-projects" class="related-projects"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

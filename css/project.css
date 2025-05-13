@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+nav {
+  background-color: #003366;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.filters-section {
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.filters select,
+.filters input,
+.filters button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+/* 
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.status.completed {
+  background-color: green;
+}
+.status.abandoned {
+  background-color: red;
+}
+.status["in progress"] {
+  background-color: orange;
+}
+.status["on hold"] {
+  background-color: gray;
+} */
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.status.completed {
+  background-color: green;
+}
+
+.status.abandoned {
+  background-color: red;
+}
+
+.status.in-progress {
+  background-color: orange;
+}
+
+.status.on-hold {
+  background-color: gray;
+}
+
