@@ -8,6 +8,11 @@
   <meta name="author" content="ProjecTrack">
   <title>ProjecTrack - Monitor Public Projects in Kenya</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+
   <!-- Link to the main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -21,15 +26,16 @@
     <div class="navbar-container">
         <!-- Logo -->
         <div class="logo">
-            <img src="img/logo.png" alt="ProjecTrack Logo">
+            <a href="./" class="logo-text">ProjecTrack</a>
         </div>
 
         <!-- Navbar Links -->
         <ul class="nav-links">
             <li><a href="./">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="insights.html">Insights</a></li>
-            <li><a href="about.html">About</a></li>
+            
         </ul>
 
         <!-- Mobile Menu Icon (SVG directly in HTML) -->
@@ -43,37 +49,40 @@
 
 
   <!-- Placeholder for landing page content -->
- <section class="hero">
-    <div class="hero-overlay">
-        <div class="hero-content">
-            <!-- Hero Text -->
-            <div class="hero-text">
-                <h1>Insights on Kenya’s Mega Public Projects</h1>
-                <p>Track, visualize, and engage with development projects across Kenya. Stay informed on government-funded projects.</p>
-                <div class="cta-buttons">
-                    <a href="project.html" class="cta-button explore">Explore Projects</a>
-                    <a href="#about.html" class="cta-button learn-more">Learn More</a>
-                </div>
-            </div>
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content glass-card">
 
-            <!-- Key Data Stats -->
-            <div class="key-stats">
-                <div class="stat">
-                    <h2>456</h2>
-                    <p>Ongoing Projects</p>
-                </div>
-                <div class="stat">
-                    <h2>1023</h2>
-                    <p>Completed Projects</p>
-                </div>
-                <div class="stat">
-                    <h2>156</h2>
-                    <p>Abandoned Projects</p>
-                </div>
-            </div>
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <h1><span class="highlight">Kenya’s Public Projects</span> — Visualized</h1>
+        <p>Track, explore, and hold projects accountable. Discover where taxpayer money goes—transparently and interactively.</p>
+        <div class="cta-buttons">
+          <a href="project.html" class="cta-button explore">Explore Projects</a>
+          <a href="about.html" class="cta-button learn-more">Learn More</a>
         </div>
+      </div>
+
+      <!-- Key Data Stats -->
+      <div class="key-stats">
+        <div class="stat">
+          <h2>456</h2>
+          <p>Ongoing Projects</p>
+        </div>
+        <div class="stat">
+          <h2>1023</h2>
+          <p>Completed Projects</p>
+        </div>
+        <div class="stat">
+          <h2>156</h2>
+          <p>Abandoned Projects</p>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
 
 <!-- What We Do Section -->
 <section class="features-section">
@@ -164,12 +173,12 @@
       <!-- Project Card 1 -->
       <div class="project-card">
         <div class="project-header">
-          <h3>Kisumu Highway Expansion</h3>
-          <span class="status ongoing">Ongoing</span>
+          <h3>Kisumu School Project 27</h3>
+          <span class="status ongoing">Terminated</span>
         </div>
         <p><strong>Location:</strong> Kisumu County</p>
-        <p><strong>Cost:</strong> KES 3.2 Billion</p>
-        <a href="#" class="view-link">View Details</a>
+        <p><strong>Cost:</strong> KES 83,377,324</p>
+        <a href="projectDetail.html?id=P0027" class="view-link">View Details</a>
       </div>
 
       <!-- Project Card 2 -->
