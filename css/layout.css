@@ -130,6 +130,7 @@
   color: #fff;
   padding: 60px 20px 30px;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .footer-container {
@@ -150,7 +151,7 @@
 .footer-brand p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #ccc;
+  color: white;
 }
 
 .footer-links h3,
@@ -182,7 +183,7 @@
 
 .footer-contact p {
   font-size: 0.95rem;
-  color: #ccc;
+  color: white;
 }
 
 .footer-contact a {
@@ -203,9 +204,10 @@
 
 .footer-bottom {
   text-align: center;
+  width: 100%;
   margin-top: 40px;
   font-size: 0.85rem;
-  color: #aaa;
+  color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 15px;
 }

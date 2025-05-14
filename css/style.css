@@ -8,8 +8,15 @@
 /* Body and font styling */
 body {
   font-family: 'Inter', sans-serif;
-
-  background-color: #ECF0F1; /* Light Gray background */
+  background-color: #ffffff;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,                /* Slant angle */
+      #f3f2f1,              /* Line color */
+      #e0e0e0 1px,          /* Line thickness */
+      transparent 1px, 
+      transparent 20px      
+    );
   color: #060707; /* Dark Blue text */
 }
 
@@ -43,18 +50,18 @@ body {
   z-index: 2;
 }
 
-/* Raindrop Background */
 .hero::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-image: radial-gradient(circle, rgba(52, 57, 57, 0.865) 3px, transparent 4px);
+  background-size: 50px 50px; /* Bigger and more spaced out */
   animation: raindrops 12s linear infinite;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
+
 
 /* Content Layout */
 .hero-content {
@@ -214,7 +221,7 @@ body {
 
 /* Section Styling */
 .features-section {
-  background: #f8fafc;
+ 
   padding: 40px 0;
   text-align: center;
   border-top: 1px solid #e5e7eb;
@@ -277,7 +284,7 @@ body {
 
 
 .section-features {
-  background: #f9f9fb;
+  
   padding: 40px 0;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -321,7 +328,7 @@ body {
 
 .featured-projects-section {
   padding: 20px 0;
-  background-color: #f9f9f9;
+  
 }
 
 

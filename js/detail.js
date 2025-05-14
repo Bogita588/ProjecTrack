@@ -156,3 +156,39 @@ function displayResolutions(project) {
   }
 }
 
+document.getElementById('submit-feedback').addEventListener('click', function () {
+  const rating = document.getElementById('rating').value;
+  const comment = document.getElementById('comment').value;
+  const message = document.getElementById('feedback-message');
+  const list = document.getElementById('feedback-list');
+
+  // Simple validation
+  if (!rating || !comment) {
+    message.textContent = 'Please fill out both fields.';
+    message.style.color = 'red';
+    return;
+  }
+
+  // Clear message
+  message.textContent = '';
+
+  // Create feedback card
+  const feedbackItem = document.createElement('div');
+  feedbackItem.classList.add('feedback-item');
+  feedbackItem.innerHTML = `
+    <p><strong>Rating:</strong> ${rating} / 5</p>
+    <p>${comment}</p>
+  `;
+
+  // Append to feedback list
+  list.prepend(feedbackItem);
+
+  // Clear form
+  document.getElementById('rating').value = '';
+  document.getElementById('comment').value = '';
+
+  message.textContent = 'Feedback submitted!';
+  message.style.color = 'green';
+});
+
+

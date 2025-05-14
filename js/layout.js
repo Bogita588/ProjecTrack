@@ -22,3 +22,22 @@
         document.getElementById('footer-container').innerHTML = data;
       });
   
+
+      
+  window.addEventListener('DOMContentLoaded', () => {
+    const visitedPages = JSON.parse(localStorage.getItem('visitedPages')) || [];
+
+    const currentPage = {
+      url: window.location.href,
+      title: document.title,
+      timestamp: new Date().toISOString()
+    };
+
+    // Avoid duplicates (optional)
+    const alreadyVisited = visitedPages.some(p => p.url === currentPage.url);
+    if (!alreadyVisited) {
+      visitedPages.push(currentPage);
+      localStorage.setItem('visitedPages', JSON.stringify(visitedPages));
+    }
+  });
+

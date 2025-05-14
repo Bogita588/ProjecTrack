@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Project Details</title>
   <link rel="stylesheet" href="css/projectdetail.css" />
+   <link rel="stylesheet" href="css/layout.css" />
   <!-- Include Chart.js from CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 <body>
-  <header class="header">
+  <div id="navbar-container"></div>
+  <header class="header" style="padding-top: 100px;">
     <h1 id="project-title">Loading Project...</h1>
     <span id="project-status" class="status-badge">Status</span>
   </header>
@@ -41,7 +43,7 @@
     </section>
 
     <section class="timeline-section">
-      <h2>Project Timeline</h2>
+      <h2 style="justify-content: center;">Project Timeline</h2>
       <div id="timeline-container" class="timeline-container"></div>
     </section>
 
@@ -61,20 +63,30 @@
     </section>
 
     <section class="feedback-section">
-      <h2>Submit Feedback</h2>
-      <label for="rating">Rating (1-5):</label>
-      <input type="number" id="rating" min="1" max="5" />
-      <label for="comment">Comment:</label>
-      <textarea id="comment"></textarea>
-      <button id="submit-feedback">Submit</button>
-      <p id="feedback-message"></p>
-    </section>
+  <h2>Submit Feedback</h2>
+
+  <label for="rating">Rating (1-5):</label>
+  <input type="number" id="rating" min="1" max="5" />
+
+  <label for="comment">Comment:</label>
+  <textarea id="comment"></textarea>
+
+  <button id="submit-feedback">Submit</button>
+  <p id="feedback-message"></p>
+
+  <!-- Feedback display area -->
+  <div id="feedback-list" class="feedback-list"></div>
+</section>
+
 
     <section class="related-projects-section">
       <h2>Related Projects</h2>
       <div id="related-projects" class="related-projects"></div>
     </section>
   </main>
+  
+ <div id="footer-container"></div>
+ <script src="js/layout.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/detail.js"></script>
