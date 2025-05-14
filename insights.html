@@ -5,51 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Government Projects Insights</title>
   <link rel="stylesheet" href="css/insights.css" />
+  <link rel="stylesheet" href="css/layout.css" />
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+   <!-- Navbar Section -->
+ <div id="navbar-container"></div>
   <header>
     <h1>Government Projects Insights</h1>
   </header>
 
   <main>
-<section style="height: 450px; width: 100%; display: flex; justify-content: center; align-items: center;">
-  <h2>Project Status Distribution</h2>
-  <canvas id="statusChart"></canvas>
+<section style="height: auto; padding: 1rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <h2 style="margin-bottom: 1rem;">Project Status Distribution</h2>
+  <div style="width: 100%; max-width: 600px;">
+    <canvas id="statusChart" style="width: 100%; height: auto;"></canvas>
+  </div>
 </section>
 
 
-    <section>
+
+    <section style="max-width: 1200px; padding-left: 10px; padding-right: 10px;">
       <h2>Budgeted vs. Actual Expenditure</h2>
       <canvas id="budgetChart"></canvas>
     </section>
 
-    <section>
+    <section style="max-width: 1200px; padding-left: 10px; padding-right: 10px;">
       <h2>County-Level Completion Rates</h2>
       <canvas id="completionChart"></canvas>
     </section>
 
-    <section>
+    <section style="max-width: 1200px; padding-left: 10px; padding-right: 10px;">
       <h2>Delay Trends Over Years</h2>
       <canvas id="delayTrendChart"></canvas>
     </section>
 
-    <section>
+    <section style="max-width: 1200px; padding-left: 10px; padding-right: 10px;">
       <h2>Community Ratings Distribution</h2>
       <canvas id="ratingChart"></canvas>
     </section>
 
-    <section>
+    <section style="max-width: 1200px; padding-left: 10px; padding-right: 10px;">
       <h2>Project Lifecycle Timeline</h2>
       <div class="timeline-container" id="timelineContainer"></div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Government Projects Dashboard</p>
-  </footer>
+  <div id="footer-container"></div>
 
+  <script src="js/layout.js"></script>
   <script src="js/insights.js"></script>
 </body>
 </html>

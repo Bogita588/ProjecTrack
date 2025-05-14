@@ -15,6 +15,7 @@
 
   <!-- Link to the main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
 
   <!-- Favicon (Optional) -->
   <link rel="icon" href="img/logo.png" type="image/png">
@@ -22,30 +23,7 @@
 
 <body>
   <!-- Navbar Section -->
- <nav class="navbar">
-    <div class="navbar-container">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="./" class="logo-text">ProjecTrack</a>
-        </div>
-
-        <!-- Navbar Links -->
-        <ul class="nav-links">
-            <li><a href="./">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            
-        </ul>
-
-        <!-- Mobile Menu Icon (SVG directly in HTML) -->
-        <div class="mobile-menu-icon" id="mobile-menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                <path d="M5 7h20M5 15h20M5 23h20" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-        </div>
-    </div>
-</nav>
+ <div id="navbar-container"></div>
 
 
   <!-- Placeholder for landing page content -->
@@ -125,6 +103,46 @@
   </div>
 </section>
 
+<section id="featured-projects" class="featured-projects-section">
+  <div class="container">
+    <h2 class="section-title">Featured Public Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Kisumu School Project 27</h3>
+          <span class="status ongoing">Terminated</span>
+        </div>
+        <p><strong>Location:</strong> Kisumu County</p>
+        <p><strong>Cost:</strong> KES 83,377,324</p>
+        <a href="projectDetail.html?id=P0027" class="view-link">View Details</a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Nandi Airstrip</h3>
+          <span class="status completed">In progress</span>
+        </div>
+        <p><strong>Location:</strong> Nandi</p>
+        <p><strong>Cost:</strong>KES 428,191,003</p>
+        <a href="projectDetail.html?id=P0019" class="view-link">View Details</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h3>School Project 17</h3>
+          <span class="status abandoned">Abandoned</span>
+        </div>
+        <p><strong>Location:</strong> Marsabit County</p>
+        <p><strong>Cost:</strong>KES 135,611,722</p>
+        <a href="projectDetail.html?id=P0017" class="view-link">View Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section-features">
   <div class="container">
     <h2 class="section-title">Why ProjecTrack Matters</h2>
@@ -166,51 +184,15 @@
   </div>
 </section>
 
-<section id="featured-projects" class="featured-projects-section">
-  <div class="container">
-    <h2 class="section-title">Featured Public Projects</h2>
-    <div class="projects-grid">
-      <!-- Project Card 1 -->
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Kisumu School Project 27</h3>
-          <span class="status ongoing">Terminated</span>
-        </div>
-        <p><strong>Location:</strong> Kisumu County</p>
-        <p><strong>Cost:</strong> KES 83,377,324</p>
-        <a href="projectDetail.html?id=P0027" class="view-link">View Details</a>
-      </div>
-
-      <!-- Project Card 2 -->
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Nairobi Drainage Upgrade</h3>
-          <span class="status completed">Completed</span>
-        </div>
-        <p><strong>Location:</strong> Nairobi City</p>
-        <p><strong>Cost:</strong> KES 1.1 Billion</p>
-        <a href="#" class="view-link">View Details</a>
-      </div>
-
-      <!-- Project Card 3 -->
-      <div class="project-card">
-        <div class="project-header">
-          <h3>Garissa Water Pipeline</h3>
-          <span class="status abandoned">Abandoned</span>
-        </div>
-        <p><strong>Location:</strong> Garissa County</p>
-        <p><strong>Cost:</strong> KES 650 Million</p>
-        <a href="#" class="view-link">View Details</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
+ <div id="footer-container"></div>
 
   <!-- Scripts -->
-  <script src="js/main.js"></script>
+  
+   <script src="js/layout.js"></script>
+  
 </body>
 
 </html>

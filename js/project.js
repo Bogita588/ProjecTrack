@@ -95,7 +95,7 @@ function displayProjects(projects) {
       <p><strong>Type:</strong> ${project.project_type}</p>
       <p><strong>Sector:</strong> ${project.sector}</p>
       <p><strong>Cost:</strong> KES ${project.budgeted_amount.toLocaleString()}</p>
-      <a href="projectDetail.html?id=${project.project_id}" class="view-link">View Details</a>
+      <a href="projectDetail.html?id=${project.project_id}" class="view-link" >View Details</a>
     `;
 
     grid.appendChild(card);
